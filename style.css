@@ -1,0 +1,641 @@
+/*give a font style*/
+*{ font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "width" 100;
+    
+}
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #252323f0;
+    flex-direction: column;  
+}  
+.bg-gif{
+    background: url(assests/kababjees-main-gif.gif) center no-repeat;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 950px;
+    
+}
+
+ .kj-div{
+    display: block;
+    width: 100%;
+    height: auto;
+   
+} 
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21,21,21);
+    
+}
+.topbar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    
+}
+.topbar li{
+   list-style: none;
+  display: flex;
+   padding: 10px;
+   width: 20%;  
+}
+#ph-no{
+    display: inline-block;
+    padding-left: 150px;
+}
+
+.topbar li a{
+    display: block;
+    text-decoration: none;
+    font-size: small !important;
+    color: #fff ;
+   
+}
+.topbar i{
+    border: 3px solid #fff;
+    border-radius:50% ;
+    padding: 10px;
+}
+.facebook{
+    padding-left: 100%;
+}
+.instagram{
+    padding-left: 10%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.nav{
+    align-items: center;
+    justify-content: center;
+}
+.nav-list{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: medium; 
+    line-height: 40px;
+    justify-content: center;
+   padding: 0 5px;
+}
+.kababjees-logo{
+    margin: 0 5px;
+}
+.nav-item{
+    
+  color: #fff;
+    border-top: 1px dashed #7f7f7f; 
+    border-bottom: 1px dashed #7f7f7f; 
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: #dcb658;
+
+} 
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 250px 0;
+         
+}
+.txt>p{
+    color: #fff;
+    font-size: 250%;
+    word-spacing: 25px;
+   line-height: 130%;
+}
+.com-icon{
+    width: 60px;
+    height:60px;
+    background-color: rgb(20, 148, 228);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 93%;
+    position: fixed;
+}
+.fa-comment{
+    position: relative;
+    color: #fff;
+    font-size: 250%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+/*----------------------------------------------------------------------------*/
+.kj-about{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    height: 750px;
+    background-color: rgb(21,21,21);
+    
+}
+.about-sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 35%;
+    height: 600px;
+   padding: 5px 0px 5px 30px;    
+}
+#about-text{
+    line-height: 25px;
+    font-size: 20px;
+    color: #7f7f7f;
+    padding-left:-30px;  
+}
+#about-head{
+   padding-right: 300px;
+  
+}
+.about-sec-2{
+    flex-direction: column;
+    display: flex;
+    width:55%;
+    height: 600px;
+}
+
+#about-img{
+    width: 600px;
+    height: 500px;
+   margin-left: 150px;
+   margin-top: 50px;
+    
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.kj-special{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    background:url(assests/bg-1.jpg)center no-repeat ; 
+    background-size: cover;
+}
+.special-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.special-content h1,p{
+    color: #fff;
+    font-family: sans-serif;
+}
+.special-content h1{
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+.special-content img{
+    margin-top: -40px;
+    width: 170px;
+}
+.special-content p{
+    font-size: 18px;
+    margin-top: -30px;
+    font-style: italic;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f7f7f; 
+    margin: 20px;
+    padding: 10px;
+}
+.cards-border{
+    border:4px solid white ;
+    border-radius: 25px;
+  
+}
+.card-space{
+    padding: 15px;
+} 
+.kj-call{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(21,21,21);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;   
+}
+
+.call-title{
+
+    color: #6f6f6f;
+    font-family: 'Cabin', sans-serif;
+    text-transform: none;
+    margin: 0;
+    font-size: 20px;
+}
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #dcb658;
+}
+a:hover{
+    text-decoration: underline;
+}
+.phone{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    color: #dcb658;
+}
+.order-btn{
+    background-color: #dcb658;
+    color: #000;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 12px 12px;
+}
+.order-btn:hover{
+    opacity: 0.5;
+}
+.kj-bank{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 750px;
+   background: url(assests/purple-bg.jpeg) center no-repeat;
+   background-size: cover;
+    padding: 20px;   
+}
+.kj-bank img{
+    margin-top: -20px;
+    width: 140px;
+}
+.kj-bank h2{
+    padding-top: 20px;
+   color: #fff;
+   letter-spacing: -2px;
+   font-weight: bold;
+   font-family: sans-serif;
+}
+.discount-posts{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left:120px ;
+    padding-right:120px ;
+}
+#post-image{
+    height: 420px;
+    width: 390px;
+    margin: 6px;
+}
+.kj-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+   
+}
+#gal-head{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', ;
+}
+.gal-border-img{
+    height: 100px;
+    width: 500px;
+}
+.gal-cards{
+    margin: 20px;
+    padding: 10px;
+}
+.gal-card{
+    margin: 10px;
+}
+.galery-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    display: flex;
+    width: 100%;
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.gal-cards-border{
+    border:1px solid gainsboro ; 
+    
+}
+.gal-card-space{
+    padding: 10px;
+  
+} 
+.gal-card button{
+    margin-left:-20px ;
+    margin-right:-20px ;
+
+}
+.kj-feedback{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    height: 450px;
+    width: 100%;
+    background:url(assests/bg-1.jpg)center no-repeat ; 
+    background-size: cover;
+    padding: 20px;
+}
+#kababjees-logo{
+    height: 15%;
+    width: 20%;
+}
+
+.fst-fedbck{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    display: block;
+    padding-bottom: 10px;
+}
+.scnd-fedbck{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 70%;
+   display: block;
+   margin-left: 16%;
+}
+
+.comment{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.comment p{
+    text-align: justify;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.comment i{
+    padding: 10px;
+    font-size: 1em;
+}
+.comment span{
+    padding-left: 20px;
+}
+#client-name{
+   color: #82460b;
+    font-size: 30px;  
+    padding-top: 20px; 
+}
+.kj-location{
+    display: flex;
+    height: 560px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(21,21,21);
+    padding: 50px;
+
+}
+.kj-location h2{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: -2px; 
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.location-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px;
+    padding-top: 15px;
+}
+.location-div{
+    margin: 12px;
+}
+.location-div img{
+    border-radius: 20px;
+}
+.location-div img:hover{
+    border-radius: 0%;
+    transform :matrix(1, 0, 0, 1, 0, 0);
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property :all;
+    transition-timing-function: ease-in-out;
+}
+.location-div i{
+    color: red;
+}
+.location-div p{
+    font-size: 25px;
+    color: #dcb658;
+}
+.kj-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background: url(assests/bg-2.jpg) center no-repeat;
+    background-size: cover;
+   
+}
+.foot-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   width: 100%;
+   
+
+}
+.foot-about-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 25%;
+    height: 300px;
+   padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+    
+}
+.foot-con-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 25%;
+    padding-top: 20px;
+    height: 300px;
+    padding-right: 50px;
+    padding-left: 20px;
+    
+}
+.foot-work-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 25%;
+    padding-top: 20px;
+    height: 300px;
+    padding-right: 50px;
+    padding-left: 20px;
+   
+
+}
+.foot-lo-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.foot-sec h2{
+    color: #dcb658;
+    font-size: 20px;  
+    padding-top: 20px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.foot-sec p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+    
+}
+.social-account{
+   
+   display: flex;
+    border: 1px solid #dcb658;
+    border-radius: 15px;
+    /* padding: 0px 15px;
+    margin: 0 15px; */
+    background-color: #7f7d7df4
+}
+.foot-about-sec i{
+   
+    flex-direction: row;
+    font-size: 20px;
+    padding: 2px 12px;
+    
+}
+.mail-cont{
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+    
+}
+.mail-cont p{
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 3px;
+    margin-left: 2px;
+}
+.mail-cont i{
+    display: flex;
+    color: #dcb658;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.foot-time p{
+    font-size: 15px;
+    color: #fff;
+
+}
+
+.foot-lo-sec a,p{
+    display: block;
+    font-size: 15px;
+    
+}
+.kj-gotop{
+    background-color:rgb(21, 21, 21);
+    border-top: 1px solid rgb(195, 192, 192);
+}
+.top-icon{
+    display: inline;
+    font-size: 20px;
+   padding: 25px 25px 25px 25px;
+   border-top-right-radius: 30px;
+   border-top-left-radius: 30px;
+   background-color:rgb(21, 21, 21);
+   border-top: 1px solid rgb(195, 192, 192);
+   color: #fff;
+      
+}
+#top-txt span{
+    color: #dcb658;
+}                                                                                                                                                                                                                                                                                        
