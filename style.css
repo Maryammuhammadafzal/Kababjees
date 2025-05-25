@@ -275,7 +275,7 @@ body {
   background-size: cover;
 }
 
-.kj-special .overlay {
+.kj-special .overlay , kj-bank .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -285,7 +285,7 @@ body {
     background-color: #00000062;
 
 }
-.kj-special .special {
+.kj-special .special, .kj-bank bank {
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -381,16 +381,18 @@ a:hover {
   opacity: 0.5;
 }
 .kj-bank {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  height: 750px;
-  background: url(assests/purple-bg.jpeg) center no-repeat;
+  position: relative;
+  height: 100vh;
+  background: url(assests/back2.jpg) center no-repeat;
   background-size: cover;
-  padding: 20px;
+}
+.kj-bank .overlay {
+    width: 100%;
+    height: 100vh;
 }
 .kj-bank img {
   margin-top: -20px;
