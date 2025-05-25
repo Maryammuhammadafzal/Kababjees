@@ -215,50 +215,53 @@ body {
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(27, 25, 25);
 }
-.kj-about div {
+.kj-about > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  width: 80%;
   height: auto;
-  padding: 2rem 0px;
+  padding: 3rem 2rem;
 }
 .about-sec-1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: white;
-  width: 35%;
+  width: 50%;
   height: auto;
+  padding: 1rem;
 }
 #about-text {
-  line-height: 25px;
-  font-size: 20px;
+  line-height: 28px;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
   color: #7f7f7f;
-  padding-left: -30px;
 }
 #about-head {
-  padding-right: 300px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 .about-sec-2 {
   flex-direction: column;
   display: flex;
-  width: 55%;
+  width: 50%;
   height: auto;
+  padding: 1rem;
 }
 
 .about-sec-2 img {
-  width: auto;
-  height: auto;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 /*----------------------------------------------------------------------------------*/
 
 .kj-special {
+    position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,8 +270,28 @@ body {
   flex-direction: column;
   display: block;
   text-align: center;
-  background: url(assests/bg-1.jpg) center no-repeat;
+  background: url(assests/back1.jpg) center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+}
+
+.kj-special .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100% ;
+    height: 100vh;
+    background-color: #00000062;
+
+}
+.kj-special .special {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 .special-content {
   display: flex;
@@ -281,19 +304,21 @@ body {
 .special-content h1,
 p {
   color: #fff;
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
+
 }
 .special-content h1 {
-  letter-spacing: -2px;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 36px;
 }
 .special-content img {
   margin-top: -40px;
-  width: 170px;
+  width: 150px;
 }
 .special-content p {
-  font-size: 18px;
-  margin-top: -30px;
+    font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  margin-top: -36px;
   font-style: italic;
 }
 .cards {
@@ -301,27 +326,26 @@ p {
   align-items: center;
   justify-content: center;
   color: #7f7f7f;
-  margin: 20px;
-  padding: 10px;
+  /* margin: 20px;
+  padding: 10px; */
 }
 .cards-border {
-  border: 4px solid white;
+  border: 3px solid white;
   border-radius: 25px;
 }
 .card-space {
   padding: 15px;
 }
 .kj-call {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300px;
   background-color: rgb(21, 21, 21);
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+  padding:  2rem 1rem;
+  gap : 5px;
 }
 
 .call-title {
@@ -343,15 +367,13 @@ a:hover {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
   display: block;
-  margin-top: 10px;
-  padding-bottom: 5px;
   color: #dcb658;
 }
 .order-btn {
   background-color: #dcb658;
   color: #000;
   display: block;
-  margin-top: 20px;
+  border: none;
   text-align: center;
   padding: 12px 12px;
 }
