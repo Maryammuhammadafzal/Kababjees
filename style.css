@@ -421,7 +421,7 @@ a:hover {
     gap: 4px;
 }
 
-.bank-content h2 {
+.bank-content h2 , .kj-gallery h2{
   color: #fff;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
@@ -448,25 +448,16 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   width: 100%;
-  height: 600px;
+  height: 500px;
   flex-direction: column;
-}
-#gal-head {
-  color: #fff;
-  font-size: 40px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow";
-}
-.gal-border-img {
-  height: 100px;
-  width: 500px;
-}
-.gal-cards {
-  margin: 20px;
-  padding: 10px;
+  background-color: #1d1c1c;
+  padding: 2rem 3rem;
 }
 .gal-card {
   margin: 10px;
+  border-radius: 0%;
 }
 .galery-img {
   display: flex;
@@ -483,17 +474,16 @@ a:hover {
   justify-content: center;
 }
 .gal-cards-border {
-  border: 1px solid gainsboro;
+  border: 1px solid rgba(166, 163, 163, 0.57);
 }
 .gal-card-space {
   padding: 10px;
 }
-.gal-card button {
-  margin-left: -20px;
-  margin-right: -20px;
+.card-img {
+    border-radius: 0%;
 }
+
 .kj-feedback {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -502,7 +492,28 @@ a:hover {
   width: 100%;
   background: url(assests/bg-1.jpg) center no-repeat;
   background-size: cover;
-  padding: 20px;
+  background-attachment: fixed;
+  position: relative;
+}
+.kj-feedback .overlay {
+    width: 100%;
+    height: 450px;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #0000003c;
+}
+.feedback-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #kababjees-logo {
   height: 15%;
