@@ -421,7 +421,7 @@ a:hover {
     gap: 4px;
 }
 
-.bank-content h2 , .kj-gallery h2{
+.bank-content h2 , .kj-gallery h2 , .kj-location > h2{
   color: #fff;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
@@ -502,7 +502,7 @@ a:hover {
     left: 0;
     position: absolute;
     z-index: 1;
-    background-color: #0000003c;
+    background-color: #0000007e;
 }
 .feedback-content {
     position: absolute;
@@ -514,10 +514,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    flex-direction: column;
 }
 #kababjees-logo {
-  height: 15%;
-  width: 20%;
+  width: 350px;
 }
 
 .fst-fedbck {
@@ -526,8 +527,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: 70%;
-  display: block;
-  padding-bottom: 10px;
+  gap: 10px;
 }
 .scnd-fedbck {
   display: flex;
@@ -535,20 +535,19 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: 70%;
-  display: block;
-  margin-left: 16%;
 }
 
 .comment {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
 }
 .comment p {
   text-align: justify;
-  font-size: 35px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  text-align: center;
   color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 .comment i {
   padding: 10px;
@@ -558,9 +557,10 @@ a:hover {
   padding-left: 20px;
 }
 #client-name {
-  color: #82460b;
-  font-size: 30px;
-  padding-top: 20px;
+  color: #dcb658;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 .kj-location {
   display: flex;
@@ -571,13 +571,6 @@ a:hover {
   flex-direction: column;
   background-color: rgb(21, 21, 21);
   padding: 50px;
-}
-.kj-location h2 {
-  color: #fff;
-  font-size: 40px;
-  letter-spacing: -2px;
-  font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .location-content {
   display: flex;
@@ -602,6 +595,8 @@ a:hover {
   transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: ease-in-out;
+  rotate: 5deg;
+  scale: 1.1;
 }
 .location-div i {
   color: red;
@@ -615,12 +610,15 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  display: block;
+  position: relative;
   width: 100%;
   height: 500px;
-  padding: 20px;
-  background: url(assests/bg-2.jpg) center no-repeat;
+  background: url(assests/back3.jpg) center no-repeat;
   background-size: cover;
+}
+.kj-footer .overlay{
+width: 100%;
+height: ;
 }
 .foot-sec {
   display: flex;
