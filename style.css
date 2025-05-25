@@ -13,9 +13,9 @@ body {
   font-family: "Oswald", sans-serif;
 }
 .main-container {
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .bg-gif {
   background: url(assests/kababjees-main-gif.gif);
@@ -266,7 +266,7 @@ body {
 /*----------------------------------------------------------------------------------*/
 
 .kj-special {
-    position: relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,23 +280,24 @@ body {
   background-size: cover;
 }
 
-.kj-special .overlay , kj-bank .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100% ;
-    height: 100vh;
-    background-color: #00000062;
-
+.kj-special .overlay,
+kj-bank .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000062;
 }
-.kj-special .special, .kj-bank bank {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
+.kj-special .special,
+.kj-bank bank {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 .special-content {
   display: flex;
@@ -310,7 +311,6 @@ body {
 p {
   color: #fff;
   font-family: "Oswald", sans-serif;
-
 }
 .special-content h1 {
   font-weight: 400;
@@ -321,7 +321,7 @@ p {
   width: 150px;
 }
 .special-content p {
-    font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   margin-top: -36px;
   font-style: italic;
@@ -349,8 +349,8 @@ p {
   background-color: rgb(21, 21, 21);
   flex-direction: column;
   text-align: center;
-  padding:  2rem 1rem;
-  gap : 5px;
+  padding: 2rem 1rem;
+  gap: 5px;
 }
 
 .call-title {
@@ -396,44 +396,46 @@ a:hover {
   background-size: cover;
 }
 .kj-bank .overlay {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .kj-bank .bank {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .kj-bank .bank-content {
-    width: 80%;
-    height: auto;
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
-.bank-content h2 , .kj-gallery h2 , .kj-location > h2{
+.bank-content h2,
+.kj-gallery h2,
+.kj-location > h2 {
   color: #fff;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
 .bank-content img {
-    margin-top: -40px;
-    width: 130px;
+  margin-top: -40px;
+  width: 130px;
 }
 
 .discount-posts {
@@ -485,7 +487,7 @@ a:hover {
   padding: 10px;
 }
 .card-img {
-    border-radius: 0%;
+  border-radius: 0%;
 }
 
 .kj-feedback {
@@ -501,26 +503,26 @@ a:hover {
   position: relative;
 }
 .kj-feedback .overlay {
-    width: 100%;
-    height: 450px;
-    top: 0%;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    background-color: #0000007e;
+  width: 100%;
+  height: 450px;
+  top: 0%;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #0000007e;
 }
 .feedback-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 450px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
 }
 #kababjees-logo {
   width: 350px;
@@ -621,14 +623,14 @@ a:hover {
   background: url(assests/back3.jpg) center no-repeat;
   background-size: cover;
 }
-.kj-footer .overlay{
-width: 100%;
-height: 400px;
-position: absolute;
-background-color: #0000005b;
-top: 0;
-left: 0;
-z-index: 1;
+.kj-footer .overlay {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: #0000005b;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .foot-sec {
   display: flex;
@@ -678,8 +680,8 @@ z-index: 1;
 .foot-lo-sec {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 25%;
   height: 300px;
   padding-right: 50px;
@@ -744,14 +746,14 @@ p {
   font-size: 15px;
 }
 .kj-gotop {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
   background-color: rgb(21, 21, 21);
   border-top: 1px solid rgb(195, 192, 192);
 }
@@ -769,4 +771,76 @@ p {
 }
 #top-txt span {
   color: #dcb658;
+}
+
+@media (max-width: 1100px) {
+  .foot-sec {
+    padding: 2rem 0rem;
+  }
+}
+@media (max-width: 900px) {
+    .kj-footer {
+        height: 700px;
+    }
+    .kj-footer .overlay {
+        height: 700px;
+    }
+    .foot-sec {
+        flex-wrap: wrap;
+    }
+  .foot-about-sec {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-con-sec {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-work-sec {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-lo-sec {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+}
+@media (max-width: 400px) {
+    .kj-footer {
+        height: 1200px;
+    }
+    .kj-footer .overlay {
+        height: 1200px;
+    }
+    .foot-sec {
+        flex-wrap: wrap;
+    }
+  .foot-about-sec {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-con-sec {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-work-sec {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .foot-lo-sec {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+
+  .comment p {
+    
+  }
 }
