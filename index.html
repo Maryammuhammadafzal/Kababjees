@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+li<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,15 +13,13 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- link of animation -->
-        <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!-- link of animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!--link of font-->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- bookstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -51,40 +49,60 @@
         <div class="kj-div kj-home">
 
             <div class="bg-gif">
+                <div class="overlay"></div>
+                <video poster="Screenshot 2023-11-06 191059.png" width="100%" height="auto" autoplay="autoplay" loop=""
+                    muted="" style="-webkit-filter: brightness(45%); /* Safari */
+      filter: brightness(55%);      position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    ">
+                    <source src="Kababjees Highway without number (1).mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
                 <!-- <video src="./assests/kababjees-main-gif.gif" autoplay  loop></video> -->
-                <img src="./assests/kababjees-main-gif.gif" alt="">
+                <!-- <img src="./assests/kababjees-main-gif.gif" alt=""> -->
             </div>
 
 
             <!--first header start-->
             <div class="header">
 
-                <ul class="topbar">
-                    <!-- phone number -->
-                    <li id="ph-no"><a href="tel:021 111 666 111">Phone:021 111 666 111</a></li>
+                <div class="topbar">
+                    <div class="left">
+                        <!-- phone number -->
+                        <p id="ph-no"><a href="tel:021 111 666 111">Phone:021 111 666 111</a></p>
 
-                    <!--email-->
-                    <li id="email"><a href="mailto:marketing@kababjees.com">mail:marketing@kababjees.com</a></li>
+                        <!--email-->
+                        <p id="email"><a href="mailto:marketing@kababjees.com">mail:marketing@kababjees.com</a></p>
 
+                    </div>
 
-                    <!-- facabook link and icon  -->
-                    <li>
+                    <div class="right">
+                        <!-- facabook link and icon  -->
+                        <p>
                         <div class="facebook">
                             <a href="">
                                 <i class="fa-brands fa-facebook-f" title="facebook">
                                 </i>
                             </a>
                         </div>
-                    </li>
+                        </p>
 
-                    <!-- instagram link and icon  -->
-                    <li>
+                        <!-- instagram link and icon  -->
+                        <p>
                         <div class="instagram">
                             <a href=""> <i class="fa-brands fa-instagram" title="instagram"></i></a>
                         </div>
-                    </li>
+                        </p>
 
-                </ul>
+                    </div>
+                </div>
 
                 <!-- toggler -->
 
@@ -123,24 +141,20 @@
                 <li class="nav-item nav-list" id="nav-home">HOME</li>
                 <li class="nav-item nav-list" id="nav-about">ABOUTUS</li>
                 <li class="nav-item nav-list" id="nav-menu">MENU</li>
-                <!-- </ul> -->
-<li class="nav-list">
-    <div class="logo">
-        <!-- kababjees logo -->
-        <img src="./assests/Kababjees-logo.png" alt="kababjees-logo" width="300px" class="kababjees-logo" >
-
-    </div>
-</li>
-               
-                   
-               
-
-                <!--nav section 2-->
-                <!-- <ul class="bar"> -->
+                <li class="nav-item nav-list" id="nav-menu">Location</li>
+                <li class="nav-list logo">
+                        <!-- kababjees logo -->
+                        <img src="./assests/Kababjees-logo.png" alt="kababjees-logo" width="300px"
+                            class="kababjees-logo">
+                </li>
+                <li class="menu nav-list">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
                 <li class="nav-item nav-list" id="nav-order">ORDERONLINE</li>
                 <li class="nav-item nav-list" id="nav-bank">BANKDISCOUNT</li>
                 <li class="nav-item nav-list" id="nav-contact">CONTACTUS</li>
             </ul>
+
 
         </div>
 
@@ -150,8 +164,7 @@
             <!-- text -->
             <p>
                 THE BEST PLACE TO REJOICE
-            </p>
-            <p>VARIETY OF CUISINES.</p>
+                VARIETY OF CUISINES.
 
 
 
@@ -170,7 +183,8 @@
     <!--About section start-->
     <div class="kj-div kj-about">
 
-        <div class="about-sec-1">
+        <div>
+            <div class="about-sec-1">
 
             <!-- about heading -->
             <h1 id="about-head">ABOUT US</h1>
@@ -189,10 +203,10 @@
         </div>
 
         <div class="about-sec-2">
-
             <!--Image of my about-->
             <img src="./assests/kababjees-about-img.jpg" alt="about-img" id="about-img">
 
+        </div>
         </div>
 
     </div>
@@ -628,12 +642,14 @@
                 <!-- feedback start -->
                 <div class="feedback">
 
-                    <div id="carouselExampleIndicators p-4" class="carousel slide w-100 d-flex justify-content-center align-item-center">
+                    <div id="carouselExampleIndicators p-4"
+                        class="carousel slide w-100 d-flex justify-content-center align-item-center">
                         <div class="carousel-indicators">
-                            <input type="radio"  name="slider" title="slide1" data-bs-target="#carouselExampleIndicators" checked="checked" data-bs-slide-to="0"
-                            class="active slider__nav" aria-current="true" aria-label="Slide 1" />
-                        <input type="radio" name="slider" title="slide2" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                         class="active slider__nav" aria-label="Slide 2" />
+                            <input type="radio" name="slider" title="slide1" data-bs-target="#carouselExampleIndicators"
+                                checked="checked" data-bs-slide-to="0" class="active slider__nav" aria-current="true"
+                                aria-label="Slide 1" />
+                            <input type="radio" name="slider" title="slide2" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1" class="active slider__nav" aria-label="Slide 2" />
 
                         </div>
                         <div class="carousel-inner">
@@ -645,15 +661,16 @@
 
                                     <!-- client text -->
                                     <div class="comment ">
-                                        
+
                                         <p>
                                             <i class="fa-solid fa-quote-left"></i>
-                                            The ambiance of the restaurantis also pleasant ,making it a suitable place to
+                                            The ambiance of the restaurantis also pleasant ,making it a suitable place
+                                            to
                                             enjoy a meal with family or friend the quality is generally good
-                                             <span>although during busy time,there might be some waiting involved</span>
+                                            <span>although during busy time,there might be some waiting involved</span>
                                             <i class="fa-solid fa-quote-right"></i>
                                         </p>
-                                        
+
                                     </div>
 
                                 </div>
@@ -666,8 +683,8 @@
                                     <h5 id="client-name">Fatima effendi</h5>
 
                                     <!-- client text -->
-                                        <div class="comment">
-                                            
+                                    <div class="comment">
+
                                         <p>
                                             <i class="fa-solid fa-quote-left"></i>
                                             In terms of pricing,Kababjees can be a bit on the expensive side compared to
@@ -675,11 +692,11 @@
                                             ,it is often worth it.
                                             <i class="fa-solid fa-quote-right"></i>
                                         </p>
-                                        
-                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
 
@@ -697,102 +714,105 @@
                 <!-- location heading -->
                 <h2 id="lo-head">OUR LOCATION</h2>
 
-                
+
                 <div class="location-content">
 
                     <!-- images, text and icons of location -->
-                <div class="location-div">
+                    <div class="location-div">
 
-                    <!-- 1st location -->
-                    <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu" target="_blank"
-                        class="location-link">
+                        <!-- 1st location -->
+                        <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu"
+                            target="_blank" class="location-link">
 
-                    <!-- location images -->
-                    <img src="./assests/highway pic2.jpg" alt="lo-img" class="lo-img" width="280px" height="220px">
+                            <!-- location images -->
+                            <img src="./assests/highway pic2.jpg" alt="lo-img" class="lo-img" width="280px"
+                                height="220px">
 
-                    <!-- location icon -->
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
+                            <!-- location icon -->
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
 
-                        <!-- location text -->
-                        &nbsp; Highway
+                                <!-- location text -->
+                                &nbsp; Highway
 
-                    </p>
-                </a>
+                            </p>
+                        </a>
 
-                </div>
-
-
-                <!-- images, text and icons of location -->
-                <div class="location-div">
-
-            <!-- 2nd location -->
-            <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu" target="_blank"
-                class="location-link">
+                    </div>
 
 
-                    <!-- location images -->
-                    <img src="./assests/dodarya1.jpg" alt="lo-img" class="lo-img" width="280px" height="220px">
+                    <!-- images, text and icons of location -->
+                    <div class="location-div">
 
-                    <!-- location icon -->
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
+                        <!-- 2nd location -->
+                        <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu"
+                            target="_blank" class="location-link">
 
-                        <!-- location text -->
-                        &nbsp; Do Darya
-                    </p>
 
-                    
-                </a>
-                
-            </div>
+                            <!-- location images -->
+                            <img src="./assests/dodarya1.jpg" alt="lo-img" class="lo-img" width="280px" height="220px">
 
-            
-            <!-- images, text and icons of location -->
-            <div class="location-div">
-                
-                <!-- 3rd location -->
-                <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu" target="_blank"
-                    class="location-link">
+                            <!-- location icon -->
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
 
-                    <!-- location images -->
-                    <img src="./assests/s9millat pic1.jpg" alt="lo-img" class="lo-img" width="280px" height="220px">
+                                <!-- location text -->
+                                &nbsp; Do Darya
+                            </p>
 
-                    <!-- location icon -->
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
 
-                        <!-- location text -->
-                        &nbsp; Shaheed e Millat
-                    </p>
+                        </a>
 
-                    
-                </a>
-                
-            </div>
+                    </div>
 
-            
-            <!-- images, text and icons of location -->
-            <div class="location-div">
-                
-                <!-- 4th location -->
-                <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu" target="_blank"
-                    class="location-link">
 
-                    <!-- location images -->
-                    <img src="./assests/hyderabad 2.jpg" alt="lo-img" class="lo-img" width="280px" height="220px">
+                    <!-- images, text and icons of location -->
+                    <div class="location-div">
 
-                    <!-- location icon -->
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
+                        <!-- 3rd location -->
+                        <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu"
+                            target="_blank" class="location-link">
 
-                        <!-- location text -->
-                        &nbsp; Hyderabad
-                    </p>
+                            <!-- location images -->
+                            <img src="./assests/s9millat pic1.jpg" alt="lo-img" class="lo-img" width="280px"
+                                height="220px">
 
-                    
-                </a>
-            </div>
+                            <!-- location icon -->
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <!-- location text -->
+                                &nbsp; Shaheed e Millat
+                            </p>
+
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- images, text and icons of location -->
+                    <div class="location-div">
+
+                        <!-- 4th location -->
+                        <a href="https://www.google.com/maps/place//@24.9746449,67.1185201,15z?entry=ttu"
+                            target="_blank" class="location-link">
+
+                            <!-- location images -->
+                            <img src="./assests/hyderabad 2.jpg" alt="lo-img" class="lo-img" width="280px"
+                                height="220px">
+
+                            <!-- location icon -->
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <!-- location text -->
+                                &nbsp; Hyderabad
+                            </p>
+
+
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -949,20 +969,20 @@
             <!-- Go to top section start -->
             <div class="kj-div kj-gotop">
 
-               <div class="top-icon">
-                 <!-- top icon -->
-                 <i class="fa-solid fa-angles-up" id="top-icon"></i>
-               </div>
+                <div class="top-icon">
+                    <!-- top icon -->
+                    <i class="fa-solid fa-angles-up" id="top-icon"></i>
+                </div>
 
                 <!-- top text -->
                 <p id="top-txt">2024 <span>Kababjees</span> All rights reserved. Powered by <span>Indolj.pk</span>
                 </p>
 
             </div>
-            <!-- Go to top section end--> 
+            <!-- Go to top section end-->
 
-            
-       <!---------------------------------------------------------------------------------------------------------------------------     -->
+
+            <!---------------------------------------------------------------------------------------------------------------------------     -->
 
         </div>
         <!-- main container end -->
